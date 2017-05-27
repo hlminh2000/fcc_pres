@@ -40,16 +40,16 @@ const server1 = {
     return new Promise(function(resolve, reject) {
       setTimeout(function () {
         if(customer){
-          resolve(customer);
+          resolve({server_id: 1, customer: customer});
         } else {
           reject("NO_CUSTOMER_FOUND");
         }
-      }, this.loadTime);
+      }, 500);
     });
   }
 }
 const server2 = {
-  loadTime: 300,
+  loadTime: 1,
   getCustomerById: function(cus_id){
     const customer = dataBase.customer.filter(function(cus){
       return cus.id === cus_id;
@@ -57,11 +57,11 @@ const server2 = {
     return new Promise(function(resolve, reject) {
       setTimeout(function () {
         if(customer){
-          resolve(customer);
+          resolve({server_id: 2, customer: customer});
         } else {
           reject("NO_CUSTOMER_FOUND");
         }
-      }, this.loadTime);
+      }, 1);
     });
   }
 }
@@ -74,11 +74,11 @@ const server3 = {
     return new Promise(function(resolve, reject) {
       setTimeout(function () {
         if(customer){
-          resolve(customer);
+          resolve({server_id: 3, customer: customer});
         } else {
           reject("NO_CUSTOMER_FOUND");
         }
-      }, this.loadTime);
+      }, 1000);
     });
   }
 }
@@ -90,8 +90,11 @@ function getCustomerById(id) {
     return server.getCustomerById(id);
   }));
 }
-
 getCustomerById(3)
-  .then(function(customer){
-    console.log("got customer: " + JSON.stringify(customer));
+  .then(function(data){
+    console.log("got customer: "
+      + JSON.stringify(data.customer)
+      + " from server: "
+      + data.server_id);
+    console.log(data);
   })

@@ -30,7 +30,6 @@ const dataBase = {
 }
 
 
-// callback hell
 function getCustomerById(cus_id){
   const customer = dataBase.customer.filter(function(cus){
     return cus.id === cus_id;
@@ -70,7 +69,7 @@ function getModelById(model_id, callback){
 
 // code to get all the product models a customer has ordered
 var _customer = null;
-getCustomerById(233)
+getCustomerById(2)
   .then(function(customer){
     _customer = customer
     return getOrdersByIds(customer.orders)
@@ -92,11 +91,11 @@ getCustomerById(233)
     }
   })
 
-getCustomerById(233)
-  .then(function(customer){
-    _customer = customer
-    return getOrdersByIds(customer.orders)
-  })
-  .catch(function(err){
-    console.log(err);
-  })
+// getCustomerById(233)
+//   .then(function(customer){
+//     _customer = customer
+//     return getOrdersByIds(customer.orders)
+//   })
+//   .catch(function(err){
+//     console.log(err);
+//   })
