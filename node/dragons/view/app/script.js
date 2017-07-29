@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         ApiService.addDragon(app.dragonToAdd)
           .then(function(_allDragons){
             app.dragons = _allDragons
+            app.dragonToAdd = {}
           })
       },
       setCurrentEditingDragon: function (_dragon) {
@@ -37,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       },
     }
   })
+  app.refresh();
 })
 
 
