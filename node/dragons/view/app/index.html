@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.4/css/bulma.min.css">
+
+    <script src="https://unpkg.com/vue"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <div id="app" class="container">
+      <div style="padding: 100px">
+        <div class="title">
+          DRAGON MASTER
+        </div>
+        <div class="">
+          <button type="button" class="button" v-on:click="refresh()">REFRESH</button>
+        </div>
+        <table class="table">
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>height</th>
+            <th>CanFly</th>
+            <th></th>
+          </tr>
+          <tr>
+            <th><input class="input" type="text" v-model="dragonToAdd.name"></th>
+            <th><input class="input" type="number" v-model="dragonToAdd.age"></th>
+            <th><input class="input" type="number" v-model="dragonToAdd.height"></th>
+            <th><input class="checkbox" type="checkbox" v-model="dragonToAdd.canFly"></th>
+            <th><button type="button" class="button is-success" v-on:click="addDragon()">ADD</button></th>
+          </tr>
+          <tr v-for="dragon in dragons">
+            <td v-if="currentEditingDragon !== dragon">{{ dragon.name }}</td>
+            <td v-if="currentEditingDragon !== dragon">{{ dragon.age }}</td>
+            <td v-if="currentEditingDragon !== dragon">{{ dragon.height }}</td>
+            <td v-if="currentEditingDragon !== dragon">{{ dragon.canFly }}</td>
+            <td v-if="currentEditingDragon !== dragon">
+              <button type="button" class="button is-small" v-on:click="setCurrentEditingDragon(dragon)">edit</button>
+            </td>
+            <td v-if="currentEditingDragon === dragon"><input class="input is-small" type="text" v-model="dragon.name"></td>
+            <td v-if="currentEditingDragon === dragon"><input class="input is-small" type="number" v-model="dragon.age"></td>
+            <td v-if="currentEditingDragon === dragon"><input class="input is-small" type="number" v-model="dragon.height"></td>
+            <td v-if="currentEditingDragon === dragon"><input class="checkbox" type="checkbox" v-model="dragon.canFly"></td>
+            <td v-if="currentEditingDragon === dragon">
+              <button type="button" class="button is-small is-success" v-on:click="saveDragonInfo(dragon)">save</button>
+              <button type="button" class="button is-small is-danger" v-on:click="deleteDragon(dragon)">delete</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+  </body>
+
+</html>
