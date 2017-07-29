@@ -20,7 +20,7 @@
         </div>
         <table class="table">
           <tr>
-            <th>Dragon Name</th>
+            <th>Name</th>
             <th>Age</th>
             <th>height</th>
             <th>CanFly</th>
@@ -46,7 +46,7 @@
             <td v-if="currentEditingDragon === dragon"><input class="input is-small" type="number" v-model="dragon.height"></td>
             <td v-if="currentEditingDragon === dragon"><input class="checkbox" type="checkbox" v-model="dragon.canFly"></td>
             <td v-if="currentEditingDragon === dragon">
-              <button type="button" class="button is-small is-success" v-on:click="saveDragonInfo(dragon)">save</button>
+              <button type="button" class="button is-small is-success" v-on:click="updateDragonInfo(dragon)">save</button>
               <button type="button" class="button is-small is-danger" v-on:click="deleteDragon(dragon)">delete</button>
             </td>
           </tr>

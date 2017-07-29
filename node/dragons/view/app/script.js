@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       deleteDragon: function (_dragon) {
         app.currentEditingDragon = null
       },
-      saveDragonInfo: function (_dragon) {
+      updateDragonInfo: function (_dragon) {
         app.currentEditingDragon = null
       },
     }
