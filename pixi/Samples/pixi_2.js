@@ -17,9 +17,10 @@ app.stage.interactive = true
 var ballModel = {
   x: 100,
   y: 100,
-  radius: 40,
+  radius: 100,
   color: 0x000000,
-  lastMouseDownLocalPosition: {x: 0, y: 0}
+  lastMouseDownLocalPosition: {x: 0, y: 0},
+  isDragging: false,
 }
 
 var ballDisplay = new PIXI.Graphics()
@@ -36,9 +37,9 @@ function onBallMouseDown(e){
   ballModel.lastMouseDownLocalPosition.y = e.data.global.y - ballDisplay.y
   app.stage.on('mouseup', onBallMouseUp)
   app.stage.on('mousemove', onStageMouseMove)
-  function onStageMouseMove(_e){
-    ballModel.x = _e.data.global.x - ballModel.lastMouseDownLocalPosition.x
-    ballModel.y = _e.data.global.y - ballModel.lastMouseDownLocalPosition.y
+  function onStageMouseMove(mouseMoveEvent){
+    ballModel.x = mouseMoveEvent.data.global.x - ballModel.lastMouseDownLocalPosition.x
+    ballModel.y = mouseMoveEvent.data.global.y - ballModel.lastMouseDownLocalPosition.y
   }
   function onBallMouseUp(_e){
     ballModel.isDragging = false
