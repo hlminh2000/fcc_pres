@@ -11,13 +11,14 @@ const cors = require("cors");
 const app = express();
 app.use(cors(), bodyParser.json(), bodyParser.urlencoded({ extended: false }));
 
-[
+const apps = [
   "_mutation_socialNetwork",
   "inventorySystem",
   "randomQuotes",
   "randomQuotes_normalizedData",
   "socialNetwork"
-].forEach(projectId => {
+];
+apps.forEach(projectId => {
   const schema = require(`./graphql_demos/${projectId}/gqlApp`);
   const targetData = require(`./graphql_demos/${projectId}/targetData.json`);
   app.use(`/${projectId}/graphql`, graphqlExpress({ schema, context: {} }));
@@ -51,9 +52,8 @@ app.use(cors(), bodyParser.json(), bodyParser.urlencoded({ extended: false }));
 
 app.listen(PORT, () => {
   console.log("===============================================");
-  console.log(`| graphql:  http://localhost:${PORT}/graphql`);
-  console.log(`| graphiql: http://localhost:${PORT}/graphiql`);
-  console.log("-----------------------------------------------");
-  console.log(`| game:     http://localhost:${PORT}/graphiql_game`);
+  apps.forEach(thing => {
+    console.log(`| game:     http://localhost:${PORT}/${thing}/graphiql_game`);
+  });
   console.log("===============================================");
 });
