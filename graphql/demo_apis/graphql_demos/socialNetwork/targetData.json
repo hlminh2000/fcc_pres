@@ -1,0 +1,24 @@
+{
+  "data": {
+    "user": {
+      "name": "Justin",
+      "favoriteColor": "red",
+      "friends": [
+        {
+          "name": "John",
+          "friends": [
+            {
+              "favoriteColor": "orange"
+            },
+            {
+              "favoriteColor": "green"
+            },
+            {
+              "favoriteColor": "red"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

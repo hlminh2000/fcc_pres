@@ -1,0 +1,92 @@
+{
+  "quotes": [
+    {
+      "authorId": "author_1",
+      "text":
+        "Keep your face always toward the sunshine—and shadows will fall behind you."
+    },
+    {
+      "authorId": "author_2",
+      "text": "It is always the simple that produces the marvelous."
+    },
+    {
+      "authorId": "author_3",
+      "text":
+        "The world is full of magical things patiently waiting for our wits to grow sharper."
+    },
+    {
+      "authorId": "author_4",
+      "text":
+        "Let us make our future now, and let us make our dreams tomorrow’s reality."
+    },
+    {
+      "authorId": "author_5",
+      "text":
+        "All you need is the plan, the road map, and the courage to press on to your destination."
+    },
+    {
+      "authorId": "author_6",
+      "text": "The glow of one warm thought is to me worth more than money."
+    },
+    {
+      "authorId": "author_7",
+      "text":
+        "Once we believe in ourselves, we can risk curiosity, wonder, spontaneous delight, or any experience that reveals the human spirit."
+    },
+    {
+      "authorId": "author_8",
+      "text": "The power of imagination makes us infinite."
+    },
+    {
+      "authorId": "author_9",
+      "text": "Try to be a rainbow in someone’s cloud."
+    },
+    {
+      "authorId": "author_10",
+      "text":
+        "I believe that if one always looked at the skies, one would end up with wings."
+    }
+  ],
+  "authors": [
+    {
+      "id": "author_1",
+      "name": "Walt Whitman"
+    },
+    {
+      "id": "author_2",
+      "name": "Amelia Barr"
+    },
+    {
+      "id": "author_3",
+      "name": "Bertrand Russell"
+    },
+    {
+      "id": "author_4",
+      "name": "Malala Yousafzai"
+    },
+    {
+      "id": "author_5",
+      "name": "Earl Nightingale"
+    },
+    {
+      "id": "author_6",
+      "name": "Thomas Jefferson"
+    },
+    {
+      "id": "author_7",
+      "name": "E. E. Cummings"
+    },
+    {
+      "id": "author_8",
+      "name": "John Muir"
+    },
+    {
+      "id": "author_9",
+      "name": "Maya Angelou"
+    },
+    {
+      "id": "author_10",
+      "name": "Gustave Flaubert"
+    }
+  ]
+}

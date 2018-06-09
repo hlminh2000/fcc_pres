@@ -1,0 +1,70 @@
+{
+  "quotes": [
+    {
+      "text":
+        "Keep your face always toward the sunshine—and shadows will fall behind you.",
+      "author": {
+        "name": "Walt Whitman"
+      }
+    },
+    {
+      "text": "It is always the simple that produces the marvelous.",
+      "author": {
+        "name": "Amelia Barr"
+      }
+    },
+    {
+      "text":
+        "The world is full of magical things patiently waiting for our wits to grow sharper.",
+      "author": {
+        "name": "Bertrand Russell"
+      }
+    },
+    {
+      "text":
+        "Let us make our future now, and let us make our dreams tomorrow’s reality.",
+      "author": {
+        "name": "Malala Yousafzai"
+      }
+    },
+    {
+      "text":
+        "All you need is the plan, the road map, and the courage to press on to your destination.",
+      "author": {
+        "name": "Earl Nightingale"
+      }
+    },
+    {
+      "text": "The glow of one warm thought is to me worth more than money.",
+      "author": {
+        "name": "Thomas Jefferson"
+      }
+    },
+    {
+      "text":
+        "Once we believe in ourselves, we can risk curiosity, wonder, spontaneous delight, or any experience that reveals the human spirit.",
+      "author": {
+        "name": "E. E. Cummings"
+      }
+    },
+    {
+      "text": "The power of imagination makes us infinite.",
+      "author": {
+        "name": "John Muir"
+      }
+    },
+    {
+      "text": "Try to be a rainbow in someone’s cloud.",
+      "author": {
+        "name": "Maya Angelou"
+      }
+    },
+    {
+      "text":
+        "I believe that if one always looked at the skies, one would end up with wings.",
+      "author": {
+        "name": "Gustave Flaubert"
+      }
+    }
+  ]
+}

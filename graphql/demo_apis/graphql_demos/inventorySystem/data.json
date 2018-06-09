@@ -1,0 +1,63 @@
+{
+  "products": [
+    {
+      "id": "iphone",
+      "name": "iPhone",
+      "inStock": 3,
+      "manufacturer": "apple"
+    },
+    {
+      "id": "ipod",
+      "name": "iPod",
+      "inStock": 5,
+      "manufacturer": "apple"
+    },
+    {
+      "id": "macbook",
+      "name": "MacBook Pro",
+      "inStock": 5,
+      "manufacturer": "apple"
+    },
+    {
+      "id": "galazxy_s8",
+      "name": "Galazxy S8",
+      "inStock": 10,
+      "manufacturer": "samsung"
+    },
+    {
+      "id": "galazxy_note8",
+      "name": "Galazxy Note 8",
+      "inStock": 7,
+      "manufacturer": "samsung"
+    }
+  ],
+  "manufacturers": [
+    {
+      "id": "samsung",
+      "name": "Samsung",
+      "products": ["galazxy_s8", "galazxy_note8"]
+    },
+    {
+      "id": "apple",
+      "name": "Apple",
+      "products": ["iphone", "ipod"]
+    }
+  ],
+  "customers": [
+    {
+      "id": "john",
+      "name": "John",
+      "purchases": ["iPhone", "macbook"]
+    },
+    {
+      "id": "vineet",
+      "name": "Vineet",
+      "purchases": ["macbook", "galazxy_s8", "ipod"]
+    },
+    {
+      "id": "alex",
+      "name": "Alex",
+      "purchases": ["galazxy_s8", "galazxy_note8"]
+    }
+  ]
+}

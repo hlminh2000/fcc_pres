@@ -1,0 +1,82 @@
+{
+  "data": {
+    "vineet": {
+      "purchases": [
+        {
+          "name": "MacBook Pro",
+          "manufacturer": {
+            "name": "Apple",
+            "products": [
+              {
+                "name": "iPhone"
+              },
+              {
+                "name": "iPod"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Galazxy S8",
+          "manufacturer": {
+            "name": "Samsung",
+            "products": [
+              {
+                "name": "Galazxy S8"
+              },
+              {
+                "name": "Galazxy Note 8"
+              }
+            ]
+          }
+        },
+        {
+          "name": "iPod",
+          "manufacturer": {
+            "name": "Apple",
+            "products": [
+              {
+                "name": "iPhone"
+              },
+              {
+                "name": "iPod"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "alex": {
+      "purchases": [
+        {
+          "name": "Galazxy S8",
+          "manufacturer": {
+            "name": "Samsung",
+            "products": [
+              {
+                "name": "Galazxy S8"
+              },
+              {
+                "name": "Galazxy Note 8"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Galazxy Note 8",
+          "manufacturer": {
+            "name": "Samsung",
+            "products": [
+              {
+                "name": "Galazxy S8"
+              },
+              {
+                "name": "Galazxy Note 8"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "name": "John",
+      "favoriteColor": "black",
+      "friends": ["Vineet", "Alex", "Justin"]
+    },
+    {
+      "name": "Vineet",
+      "favoriteColor": "orange",
+      "friends": ["John", "Alex"]
+    },
+    {
+      "name": "Alex",
+      "favoriteColor": "green",
+      "friends": ["John", "Vineet"]
+    },
+    {
+      "name": "Justin",
+      "favoriteColor": "red",
+      "friends": ["John"]
+    }
+  ]
+}
